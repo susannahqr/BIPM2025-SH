@@ -4,69 +4,153 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Susanna Huang's Story</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        h1, h3, h4 {
+            color: #272626;
+        }
+        a {
+            color: #007aff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        img {
+            border-radius: 8px;
+        }
+        .main-photo {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            height: auto;
+        }
+        .melbourne-gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .melbourne-gallery img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .what-i-like-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 10px 0;
+        }
+        .what-i-like-gallery img {
+            height: 400px;
+            width: auto;
+            object-fit: cover;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #e1e1e1;
+        }
+        thead {
+            background-color: #f5f5f5;
+        }
+        iframe {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #e1e1e1;
+        }
+    </style>
 </head>
 <body>
-    <h1>Susanna Huang's Story</h1>
+    <div class="container">
+        <h1>Susanna Huang's Story</h1>
 
-    <p><strong>Susanna Huang</strong></p>
+        <p><strong>Susanna Huang</strong></p>
 
-    <p>Student of Master of Business Intelligence and Process Management</p>
-    <p>Berlin School of Economics and Law</p>
-    <p><a href="https://www.linkedin.com/in/susannahqr/">https://www.linkedin.com/in/susannahqr/</a></p>
+        <p>Student of Master of Business Intelligence and Process Management</p>
+        <p>Berlin School of Economics and Law</p>
+        <p><a href="https://www.linkedin.com/in/susannahqr/">https://www.linkedin.com/in/susannahqr/</a></p>
 
-    <img src="photos/BIPM25_Potsdamer-Platz.jpeg" alt="BIPM 2025 cohort at Potsdamer Platz" width="400" />
+        <img src="photos/BIPM25_Potsdamer-Platz.jpeg" alt="BIPM 2025 cohort at Potsdamer Platz" class="main-photo" />
 
-    <h3>Born and Raised</h3>
+        <h3>Born and Raised</h3>
 
-    <p><a href="https://www.broadsheet.com.au/melbourne/guides/best-cafes">Melbourne, Australia</a></p>
+        <p><a href="https://www.broadsheet.com.au/melbourne/guides/best-cafes">Melbourne, Australia</a></p>
 
-    <img src="https://media.istockphoto.com/id/486506625/de/foto/melbourne-morgen.jpg?s=612x612&w=0&k=20&c=oaHUpN4ER087EjSFMUfja1Ij9yLqxuUASDusBJSmcpI=" alt="Yarra River" width="600" />
-    <img src="https://www.visitmelbourne.com/-/media/images/features/melbourne-landmarks/flinders-street_mel_r_152831-56_1600x900.jpg?ts=20231025030323" alt="Flinders Street Station" width="600" />
+        <div class="melbourne-gallery">
+            <img src="https://media.istockphoto.com/id/486506625/de/foto/melbourne-morgen.jpg?s=612x612&w=0&k=20&c=oaHUpN4ER087EjSFMUfja1Ij9yLqxuUASDusBJSmcpI=" alt="Yarra River" />
+            <img src="https://www.visitmelbourne.com/-/media/images/features/melbourne-landmarks/flinders-street_mel_r_152831-56_1600x900.jpg?ts=20231025030323" alt="Flinders Street Station" />
+        </div>
 
-    <h3>What I like</h3>
+        <h3>What I like</h3>
+        <div class="what-i-like-gallery">
+            <img src="photos/grampians1.jpg" alt="Climbing at Grampians" />
+            <img src="photos/grampians2.jpg" alt="Climbing at Grampians" />
+            <img src="photos/aerialyoga.jpeg" alt="Aerial Yoga" />
+            <img src="photos/bottari.jpeg" alt="Cafe food and drinks" />
+            <img src="photos/chiaki.jpeg" alt="Japanese teishoku brunch" />
+        </div>
 
-    <img src="photos/grampians1.JPG" alt="Climbing at Grampians" width="400" />
-    <img src="photos/grampians2.JPG" alt="Climbing at Grampians" width="400" />
-    <img src="photos/aerialyoga.jpeg" alt="Aerial Yoga" width="500" />
-    <img src="photos/bottari.jpeg" alt="Cafe food and drinks" width="600" />
-    <img src="photos/soi38.JPG" alt="Thai street food" width="600" />
+        <h3>Academic Journey</h3>
 
-    <h3>Academic Journey</h3>
+        <h4>🎓 Stops Along the Way</h4>
 
-    <h4>🎓 Stops Along the Way</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Period</th>
+                    <th>Location</th>
+                    <th>Role</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2018–20</td>
+                    <td>Melbourne, Australia</td>
+                    <td>Bachelor in Computing Studies</td>
+                </tr>
+                <tr>
+                    <td>2019</td>
+                    <td>Daejeon, South Korea</td>
+                    <td>Semester Exchange at KAIST</td>
+                </tr>
+                <tr>
+                    <td>2021-25</td>
+                    <td>Melbourne, Australia</td>
+                    <td>IBM Consulting, Scyne Advisory</td>
+                </tr>
+                <tr>
+                    <td>2025–Now</td>
+                    <td>Berlin, Germany</td>
+                    <td>Master Student in Business Intelligence and Process Management</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <table border="1" cellpadding="5" cellspacing="0">
-        <thead>
-            <tr>
-                <th>Period</th>
-                <th>Location</th>
-                <th>Role</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>2018–20</td>
-                <td>Melbourne, Australia</td>
-                <td>Bachelor in Computing Studies</td>
-            </tr>
-            <tr>
-                <td>2019</td>
-                <td>Daejeon, South Korea</td>
-                <td>Semester Exchange at KAIST</td>
-            </tr>
-            <tr>
-                <td>2021-25</td>
-                <td>Melbourne, Australia</td>
-                <td>IBM Consulting, Scyne Advisory</td>
-            </tr>
-            <tr>
-                <td>2025–Now</td>
-                <td>Berlin, Germany</td>
-                <td>Master Student in Business Intelligence and Process Management</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <iframe src="academic_journey_map.html" width="800" height="600" style="border:none;"></iframe>
+        <iframe src="academic_journey_map.html" height="600"></iframe>
+    </div>
 </body>
 </html>
+
